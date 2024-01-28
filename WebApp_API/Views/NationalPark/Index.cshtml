@@ -1,0 +1,31 @@
+﻿<div class="row">
+    <div class="col-9">
+        <h2 class="text-primary">National Park</h2>
+    </div>
+    <div class="col-3">
+        <a asp-action="Upsert" class="btn btn-info form-control text-white">
+            <i class="fas fa-plus"></i>&nbsp;  Add National Park
+        </a>
+    </div>
+   @*  <div class="col-1">
+        <a asp-action="Upsert_Two" class="btn btn-info form-control text-white">
+            <i class="fas fa-plus"></i>&nbsp; 2nd
+        </a>
+    </div> *@
+    <div class="container rounded border p-2 m-2">
+        <table id="tdData" class="table table-bordered table-active table-striped">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>State</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+        </table>
+    </div> 
+</div>
+
+@section Scripts
+{
+    <script src="~/js/NationalPark.js"></script>
+}
