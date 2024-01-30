@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NationalPark_API_04.IRepository;
 using NationalPark_API_04.Model;
@@ -8,6 +9,7 @@ namespace NationalPark_API_04.Controllers
 {
     [Route("api/Trail")]
     [ApiController]
+    [Authorize]
     public class TrailController : Controller
     {
         private readonly ITrailRepository _trailRepository;
